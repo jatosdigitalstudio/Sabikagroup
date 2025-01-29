@@ -76,6 +76,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileMenu from './MobileMenu';
+import { Button } from '../UI/Button';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -83,7 +84,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'About Company', path: '/about' },
-    { name: 'Network Stories', path: '/stories' },
+    { name: 'Network Stories', path: '/network-stories' },
     { name: 'Businesses', path: '/businesses' },
     { name: 'News & Events', path: '/news-events' },
     { name: 'Partner with Us', path: '/partner' },
@@ -98,7 +99,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all px-12 duration-300 ${isScrolled ? 'bg-white/75 shadow backdrop-blur-lg border-b border-gray-100/30' : 'bg-transparent '}`}>
+    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all px-12 duration-300 ${isScrolled ? 'bg-white/25 shadow backdrop-blur-lg border-b border-gray-100/30' : 'bg-transparent '}`}>
       <div className="container mx-auto p-4 ">
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}
@@ -122,10 +123,12 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex">
-            <div className="bg-[#345DA3] text-white px-6 py-4 rounded-md">
+            {/* <div className="bg-[#345DA3] text-white px-6 py-4 rounded-md">
                 Contact Us
-            </div>
-            
+            </div> */}
+            <Button>
+              Contact Us
+            </Button>
           </div>
 
           <MobileMenu />

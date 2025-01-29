@@ -1,10 +1,10 @@
 "use client"
 import { motion } from "framer-motion";
 import { fadeUpVariant } from "@/utils/custom";
-
+import Link from "next/link";
 export default function BusinessPreview() {
   return (
-    <section className="relative flex flex-col items-center justify-center my-24">
+    <section className="relative flex flex-col items-center justify-center my-24" id="business">
       <motion.div 
         variants={fadeUpVariant}
         initial="initial"
@@ -24,7 +24,9 @@ export default function BusinessPreview() {
         <div className="bg-black px-36 py-24 rounded-md "></div>
         <div className="bg-black px-36 py-24 rounded-md "></div>
         <div className="justify-center items-center">
-            More Businesses
+            <Link href="/businesses">
+                More Businesses
+            </Link>
         </div>
       </div>
     </section>
