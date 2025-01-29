@@ -1,5 +1,5 @@
 
-export default function AboutPage() {
+export default function BusinessPage() {
     return (
         <>
         <section className="relative h-screen flex items-center justify-center">
@@ -9,7 +9,7 @@ export default function AboutPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-3xl md:text-5xl lg:text-6xl font-medium mb-6"
                 >
-                    About Sabika Group
+                    Business Unit
                 </h1>
             </div>
         </section>
