@@ -12,9 +12,9 @@ export default function NetworkStories() {
     const x = useTransform(scrollYProgress, [0, 1], ["5%", "-55%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] bg-white">
-            <div className="sticky top-0 flex flex-row h-screen items-center overflow-hidden bg-[#EFF1F7] py-6">
-                <div className="flex flex-col h-full justify-center items-center mx-auto pl-36 pr-12 bg-[#EFF1F7] z-30">
+        <section ref={targetRef} className="relative h-[300vh] mx-12  bg-white">
+            <div className="sticky top-0 flex flex-row rounded-lg h-screen items-center overflow-hidden bg-[#EFF1F7] py-6">
+                <div className="flex flex-col h-full justify-center pl-24 pr-12 bg-[#EFF1F7] z-30">
                     <h1 className="text-xl md:text-2xl lg:text-6xl font-medium mb-6">
                         Network Stories
                     </h1>

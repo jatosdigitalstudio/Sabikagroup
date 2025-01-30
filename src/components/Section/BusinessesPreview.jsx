@@ -4,7 +4,7 @@ import { fadeUpVariant } from "@/utils/custom";
 import Link from "next/link";
 export default function BusinessPreview() {
   return (
-    <section className="relative flex flex-col items-center justify-center my-24" id="business">
+    <section className="relative flex flex-col items-center justify-center my-28" id="business">
       <motion.div 
         variants={fadeUpVariant}
         initial="initial"
