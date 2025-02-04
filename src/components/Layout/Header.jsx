@@ -99,7 +99,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all px-12 duration-300 ${isScrolled ? 'bg-white/25 shadow backdrop-blur-lg border-b border-gray-100/30' : 'bg-transparent '}`}>
+    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl border-b border-gray-300' : 'bg-transparent '}`}>
       <div className="container mx-auto p-4 ">
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}
