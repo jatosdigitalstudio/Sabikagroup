@@ -29,7 +29,7 @@ export default  function RootLayout({children}) {
     <html lang="id">
       <body className={inter.className}>
           <>
-            <ScrollToTopButton/>
+            {/* <ScrollToTopButton/> */}
             <Header />
               {children}
             <Footer />

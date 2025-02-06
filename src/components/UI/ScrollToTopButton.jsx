@@ -29,12 +29,12 @@ export default function ScrollToTopButton() {
 
     return (
         <motion.button
-            className="fixed bottom-0 right-0 p-10"
+            className="fixed bottom-0 right-0 p-8"
             variants={ScrollToTopContainerVariants}
             initial="hide"
             animate={controls}
             onClick={scrollToTop}>
-            <div className="bg-[#3F3BF2] text-white rounded-md p-6">
+            <div className="bg-black text-white rounded-md p-6">
                 <ChevronUpIcon className="text-white" />
             </div>
         </motion.button>

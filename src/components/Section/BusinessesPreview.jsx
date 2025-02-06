@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { fadeUpVariant } from "@/utils/custom";
 import Link from "next/link";
+import Image from "next/image";
+
 export default function BusinessPreview() {
   return (
     <section className="relative flex flex-col items-center justify-center my-28" id="business">
@@ -19,10 +21,22 @@ export default function BusinessPreview() {
         </p>
       </motion.div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 place-items-center lg:pb-28">
-        <div className="bg-black px-36 py-24 rounded-md "></div>
-        <div className="bg-black px-36 py-24 rounded-md "></div>
-        <div className="bg-black px-36 py-24 rounded-md "></div>
-        <div className="bg-black px-36 py-24 rounded-md "></div>
+        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
+          <h2 className="text-xl font-bold bg-(url)">Sabika Arabindo</h2>
+          <p>Worker Provider</p>
+        </div>
+        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
+          <h2 className="text-xl font-bold bg-(url)">Sabika Propertindo</h2>
+          <p>Hotels & Property</p>
+        </div>
+        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
+          <h2 className="text-xl font-bold bg-(url)">Sabika Al-Haramain</h2>
+          <p>Travel & Umroh</p>
+        </div>
+        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
+          <h2 className="text-xl font-bold bg-(url)">Sabika Media Management</h2>
+          <p>360 Digital Agency</p>
+        </div>
         <div className="justify-center items-center">
             <Link href="/businesses">
                 More Businesses

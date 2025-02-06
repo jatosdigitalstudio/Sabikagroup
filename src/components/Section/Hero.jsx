@@ -18,7 +18,7 @@ export default function Hero() {
           A diversified holding company driving innovation, collaboration, and sustainable success across industries
         </p>
         <div className="flex flex-col md:flex-row mx-auto justify-center gap-2 md:gap-4">
-          <Link href="/" scroll>
+          <Link href="/#about" scroll>
               <Button 
               className="bg-[#283782] text-white px-8 py-3 rounded-md text-lg font-semibold"
               >

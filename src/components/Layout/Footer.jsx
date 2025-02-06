@@ -34,11 +34,10 @@ export default function Footer() {
                 </div>
 
                 <div>
-                <h5 className="font-bold text-xl mb-4">Contact Us</h5>
-                <ul className="space-y-2 text-sm">
-                    <li><a href="#" className="hover:opacity-75">Energy</a></li>
-                    <li><a href="#" className="hover:opacity-75">Real Estate</a></li>
-                    <li><a href="#" className="hover:opacity-75">Technology</a></li>
+                <h5 className="font-bold text-xl mb-4">Partner With Us</h5>
+                <ul className="space-y-2 text-md">
+                    <li><a href="#" className="hover:opacity-75">Investment</a></li>
+                    <li><a href="#" className="hover:opacity-75">Collaboration</a></li>
                 </ul>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import Hero from "@/components/Section/Hero";
+import AboutPreview from "@/components/Section/AboutPreview";
 import NetworkStories from "@/components/Section/NetworkStoriesPreview";
 import BusinessPreview from "@/components/Section/BusinessesPreview";
 import NewsPreview from "@/components/Section/NewsPreview";
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <>
     <Hero/>
+    <AboutPreview/>
     <NetworkStories/>
     <BusinessPreview />
     <CTA/>

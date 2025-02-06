@@ -1,8 +1,8 @@
 const names = [
-    { name: "John", id: 1 },
-    { name: "Alice", id: 2 },
-    { name: "Bob", id: 3 },
-    { name: "Emily", id: 4 },
+    { name: "John LBF", id: 1 },
+    { name: "Baim Wong", id: 2 },
+    { name: "Rafi Ahmad", id: 3 },
+    { name: "Sandiaga Uno", id: 4 },
   ];
   
 export default function Card() {
