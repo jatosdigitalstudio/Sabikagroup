@@ -8,8 +8,7 @@ export default function NewsPreview() {
         <section className="m-24 py-12 bg-white">
             <div className="flex flex-col ">
                 <h1 className="text-xl md:text-2xl lg:text-6xl font-medium mb-12">
-                    News & Events <br/>
-                    From Sabika
+                    News & Events
                 </h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-24">
                     <div className="flex flex-col rounded-xl">

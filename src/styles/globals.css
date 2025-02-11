@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>')
 }
 
 body {
@@ -15,9 +16,45 @@ body {
 }
 
 .hover-underline-animation::after {
-  @apply dark:bg-gray-500 bg-gray-500 content-[''] absolute w-full scale-x-0 h-[3px] bottom-0 left-0 origin-left transition-all ease-in-out;
+  @apply bg-gray-800 content-[''] absolute w-full scale-x-0 h-[2px] bottom-0 left-0 origin-left transition-all ease-in-out;
 }
 
 .hover-underline-animation:hover::after {
   @apply scale-x-100;
 }
+
+.flare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  backdrop-filter: blur(2px);
+  background-color: white;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    display: none;
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.flare.pointer {
+  display: none;
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+} 

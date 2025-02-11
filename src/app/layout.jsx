@@ -4,10 +4,11 @@ import { usePathname } from "next/navigation";
 import { Inter, Arimo } from "next/font/google";
 import "@/styles/globals.css"
 import Head from './head';
-import Loading from "./loading";
+// import Loading from "./loading";
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import ScrollToTopButton from '@/components/UI/ScrollToTopButton';
+// import FlareCursor from '@/components/UI/FlareCursor';
 
 const inter = Arimo({ 
   weight: ['400','500','600', '700'],
@@ -29,6 +30,7 @@ export default  function RootLayout({children}) {
     <html lang="id">
       <body className={inter.className}>
           <>
+            {/* <FlareCursor/> */}
             {/* <ScrollToTopButton/> */}
             <Header />
               {children}
