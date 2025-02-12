@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import { fadeUpVariant } from "@/utils/custom";
 import Link from "next/link";
-
+import { ButtonMinimal } from "../UI/ButtonMinimal";
 export default function AboutPreview() {
   return (
-    <section className="bg-[#345DA3]  justify-center py-36" id="about">
+    <section className="bg-[#345DA3]  justify-center py-32" id="about">
         <div className="container mx-auto">
             <div className="grid grid-cols-2">
                 <motion.div 
@@ -28,30 +28,34 @@ export default function AboutPreview() {
                             development, hospitality, media, and more. Each of our ventures is built on the pillars of innovation, 
                             integrity, and long-term sustainability, shaping the future one step at a time.
                         </p>
-                        <div className="max-w-md mb-12">
+                        <div className="max-w-sm mb-8">
                             <div className="grid grid-cols-2 gap-8">
                                 <div className="flex flex-col bg-[#EFF1F7] text-black p-2 rounded-md justify-center items-center">
-                                    <h1 className="text-4xl mb-2">10 </h1>
-                                    <h2>Years Experienced</h2>
+                                    <h1 className="text-3xl mb-2">10 </h1>
+                                    <h2 className="text-sm">Years Experienced</h2>
                                 </div>
                                 <div className="flex flex-col bg-[#EFF1F7] text-black p-2 rounded-md justify-center items-center">
-                                    <h1 className="text-4xl mb-2">23 </h1>
-                                    <h2>Business Unit</h2>
+                                    <h1 className="text-3xl mb-2">23 </h1>
+                                    <h2 className="text-sm">Business Unit</h2>
                                 </div>
                                 <div className="flex flex-col bg-[#EFF1F7] text-black p-2 rounded-md justify-center items-center">
-                                    <h1 className="text-4xl mb-2">142</h1>
-                                    <h2>Project Challenge</h2>
+                                    <h1 className="text-3xl mb-2">142</h1>
+                                    <h2 className="text-sm">Project Challenge</h2>
                                 </div>
                                 <div className="flex flex-col bg-[#EFF1F7] text-black p-2 rounded-md justify-center items-center">
-                                    <h1 className="text-4xl mb-2">10 </h1>
-                                    <h2>Years Experienced</h2>
+                                    <h1 className="text-3xl mb-2">10 </h1>
+                                    <h2 className="text-sm">Years Experienced</h2>
                                 </div>
                             </div>
                         </div>
 
                         <div className="justify-center items-center">
                             <Link href="/about">
-                                Learn more about our Journey
+                                <ButtonMinimal>
+                                    <span className="text-white">
+                                        Learn more about our Journey
+                                    </span>
+                                </ButtonMinimal>
                             </Link>
                         </div>
                 </motion.div>
@@ -69,7 +73,7 @@ export default function AboutPreview() {
                         guided by a commitment to excellence and a passion for creating opportunities. 
                         Together, we are shaping a future defined by innovation and shared success."
                     </p>
-                    <h1 className="text-lg text-white">Nofel Saleh Hilabi, Founder Sabika Group</h1>
+                    <h1 className="text-lg text-white"> <span className="font-bold">Nofel Saleh Hilabi</span> - Founder Sabika Group</h1>
                 </motion.div>
             </div>
         </div>

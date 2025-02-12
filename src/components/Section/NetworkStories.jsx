@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function NetworkStories() {
   return (
-    <section className="relative flex flex-col items-center justify-center my-16" id="business">
+    <section className="relative flex flex-col items-center justify-center py-22" id="stories">
       <motion.div 
         variants={fadeUpVariant}
         initial="initial"
@@ -21,38 +21,23 @@ export default function NetworkStories() {
           Explore how we’re shaping the future of industries
         </p>
       </motion.div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 place-items-center lg:pb-28">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 lg:pb-28 place-items-center">
         {
           NETWORK_STORIES.map((item)  => (
-            <div className="w-[300px] px-4">
-              <div className="text-white rounded-md bg-black px-4 py-20 justify-center">
+            <div className="flex flex-col relative w-[300px] px-4 ">
+              <div className="text-white rounded-md bg-black px-4 py-36 mb-6 justify-start">
                 
               </div>
-              <h2 className="text-xl font-bold mb-2">{item.name}</h2>
-                <p>{item.text}</p>
+              <div className="px-2">
+                <h2 className="text-xl font-bold mb-2 bottom-0">{item.name}</h2>
+                <p>"{item.text}"</p>
+              </div>
             </div>
-           
           ))
         }
-        {/* <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
-          <h2 className="text-xl font-bold bg-(url)">Sandiaga Uno</h2>
-          <p>360 Digital Agency</p>
-        </div>
-        <div className="w-[300px] text-center text-white rounded-md bg-black px-4 py-20">
-          <h2 className="text-xl font-bold bg-(url)">John LBF</h2>
-          <p>Worker Provider</p>
-        </div>
-        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
-          <h2 className="text-xl font-bold bg-(url)">Raffi Ahmad</h2>
-          <p>Hotels & Property</p>
-        </div>
-        <div className="w-[300px] text-white rounded-md bg-black px-4 py-20 justify-center">
-          <h2 className="text-xl font-bold bg-(url)">Baim Wong</h2>
-          <p>Travel & Umroh</p>
-        </div> */}
-        <div className="justify-center items-center">
-            <Link href="/network-stories">
-                More Stories
+        <div className="justify-center">
+            <Link href="/network-stories" className="underline">
+              Read More Stories
             </Link>
         </div>
       </div>

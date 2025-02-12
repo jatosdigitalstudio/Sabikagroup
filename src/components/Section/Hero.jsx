@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { fadeUpVariant } from "@/utils/custom";
 import { Button } from "../UI/Button";
+import { ButtonMinimal } from "../UI/ButtonMinimal";
+
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center">
@@ -27,11 +29,9 @@ export default function Hero() {
           </Link>
           
           <Link href="/#business" scroll>
-            <button 
-              className="text-black px-8 py-3 rounded-md text-lg font-semibold"
-            >
+            <ButtonMinimal className="!text-black ">
               Explore Our Business
-            </button>
+            </ButtonMinimal>
           </Link>
         </div>
       </motion.div>

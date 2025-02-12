@@ -41,13 +41,13 @@ export const NETWORK_STORIES = [
         id: 1,
         name: "Sandiaga Uno",
         image: "https://images.pexels.com/photos/6195284/pexels-photo-6195284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        text: "Sabika Group’s commitment to excellence and innovation is unparalleled. Nofel’s leadership has been instrumental in creating opportunities that uplift industries and communities alike.", 
+        text: "Sabika Group’s commitment to excellence and innovation is unparalleled. Nofel’s leadership has been instrumental in creating opportunities that uplift industries.", 
     },
     { 
         id: 2,
         name: "Raffi Ahmad", 
         image: "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        text: "It’s been an honor to collaborate with Sabika Group. Their passion for progress and sustainable business practices align with the values I hold dear. I look forward to continuing our partnership.", 
+        text: "It’s been an honor to collaborate with Sabika Group. Their passion for progress and sustainable business. I look forward to continuing our partnership.", 
     },
     { 
         id: 3, 
