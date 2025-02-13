@@ -9,10 +9,10 @@ export default function BusinessUnit() {
     const { scrollYProgress } = useScroll({
         target: targetRef,
       });
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] max-w-[1440px] mx-auto bg-white" id="business">
+        <section ref={targetRef} className="relative h-[300vh] max-w-[1920px] mx-auto bg-white" id="business">
             <div className="sticky top-0 flex flex-row rounded-lg h-screen items-center overflow-hidden bg-[#EFF1F7] py-6">
                 <div className="flex flex-col h-full justify-center px-24 bg-[#EFF1F7] z-30">
                     <h1 className="text-xl md:text-2xl lg:text-5xl font-medium mb-6">
