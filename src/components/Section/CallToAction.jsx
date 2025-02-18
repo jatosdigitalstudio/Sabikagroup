@@ -22,8 +22,7 @@ export default function CTA() {
     return (
       <div className='h-screen overflow-hidden '>
         <motion.div style={{y}} className='h-full'>
-            <div 
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center z-50 md:px-22">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-[80%] lg:w-[60%] z-50 md:px-22">
                 <h1 className='text-center text-4xl md:text-7xl text-white mb-6'>Lets build the Future Together</h1>
                 <p className='text-center text-white w-full lg:w-[80%]'>Join us in creating impactful ventures and unlocking new opportunities. Whether you’re an investor, entrepreneur, or industry leader, we’d love to hear from you.</p>
                   <Link href="/partner" className='mt-12'>

@@ -9,13 +9,13 @@ export default function BusinessUnit() {
     const { scrollYProgress } = useScroll({
         target: targetRef,
       });
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["20%", "-70%"]);
 
     return (
         <section ref={targetRef} className="relative h-[300vh] max-w-[1920px] mx-auto bg-white" id="business">
-            <div className="sticky top-0 flex flex-row rounded-lg h-screen items-center overflow-hidden bg-[#EFF1F7] py-6">
-                <div className="flex flex-col h-full justify-center px-24 bg-[#EFF1F7] z-30">
-                    <h1 className="text-xl md:text-2xl lg:text-5xl font-medium mb-6">
+            <div className="sticky top-0 flex flex-col lg:flex-row rounded-lg h-screen items-center overflow-hidden bg-[#EFF1F7] py-6">
+                <div className="flex flex-col lg:h-full justify-center mt-36 px-8 lg:px-24 bg-[#EFF1F7] z-30">
+                    <h1 className="text-4xl lg:text-5xl font-medium mb-6">
                         Explore Businesses
                     </h1>
                     <p className="text-sm md:text-md lg:text-lg mb-12">
@@ -26,7 +26,7 @@ export default function BusinessUnit() {
                         Read More Stories
                     </Link> */}
                 </div>
-                <motion.div style={{ x }} className="z-10"> 
+                <motion.div style={{ x }} className="z-10 ml-12"> 
                     <Card />
                 </motion.div>
             </div>
