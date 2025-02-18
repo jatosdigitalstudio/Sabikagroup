@@ -7,12 +7,12 @@ export default function AboutPreview() {
   return (
     <section className="bg-[#345DA3] justify-center py-32" id="about">
         <div className="container mx-auto">
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 px-6">
                 <motion.div 
                     variants={fadeUpVariant}
                     initial="initial"
                     animate="animate"
-                    className=" text-white max-w-4xl mb-8 px-6 md:px-24">
+                    className="text-white max-w-4xl mb-8 md:px-24">
                         <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium mb-6">
                             About Sabika Group
                         </h1>

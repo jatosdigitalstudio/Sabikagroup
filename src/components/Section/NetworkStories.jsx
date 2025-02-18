@@ -7,12 +7,12 @@ import Image from "next/image";
 
 export default function NetworkStories() {
   return (
-    <section className="relative flex flex-col items-center justify-center py-22" id="stories">
+    <section className="relative flex flex-col items-center justify-center px-6 my-20" id="stories">
       <motion.div 
         variants={fadeUpVariant}
         initial="initial"
         animate="animate"
-        className="relative text-center text-black max-w-4xl mb-8 px-6 md:px-24 lg:pt-28">
+        className="relative text-center text-black max-w-4xl mb-8 px-6 md:px-24 lg:pt-24">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium mb-6">
           Network Stories
         </h1>
@@ -21,7 +21,7 @@ export default function NetworkStories() {
           Explore how we’re shaping the future of industries
         </p>
       </motion.div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 lg:pb-28 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:pb-28 place-items-center">
         {
           NETWORK_STORIES.map((item)  => (
             <div className="flex flex-col relative w-[300px] px-4 ">
