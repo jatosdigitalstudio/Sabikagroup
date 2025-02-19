@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="grid grid-rows md:grid-cols-3 gap-8">
                 <div>
                 <h5 className="font-bold text-xl mb-4">Company</h5>
-                  <ul className="space-y-2 text-xl">
+                  <ul className="space-y-2 text-md md:text-xl">
                       <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
                       <li><Link href="/" className="text-gray-300 hover:text-white">Vision & Mission</Link></li>
                       <li><Link href="/" className="text-gray-300 hover:text-white">Network Stories</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
 
                 <div>
                 <h5 className="font-bold text-xl mb-4">Businesses</h5>
-                <ul className="space-y-2 text-xl">
+                <ul className="space-y-2 text-md md:text-xl">
                     <li><Link href="/" className="text-gray-300 hover:text-white">Worker</Link></li>
                     <li><Link href="/" className="text-gray-300 hover:text-white">Real Estate</Link></li>
                     <li><Link href="/" className="text-gray-300 hover:text-white">Technology</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
 
                 <div>
                 <h5 className="font-bold text-xl mb-4">Partner With Us</h5>
-                <ul className="space-y-2 text-xl">
+                <ul className="space-y-2 text-md md:text-xl">
                     <li><Link href="/" className="text-gray-300 hover:text-white">Investment</Link></li>
                     <li><Link href="/" className="text-gray-300 hover:text-white">Collaboration</Link></li>
                 </ul>
@@ -58,7 +58,7 @@ export default function Footer() {
             </Link>
           </div>
   
-          <div className="border-t border-white mt-6 md:mt-2 pt-8 text-center text-md">
+          <div className="border-t border-white mt-6 md:mt-2 pt-8 text-center text-sm md:text-md">
             <p>© 2025 Sabika Group. All rights reserved.</p>
           </div>
         </div>

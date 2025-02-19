@@ -34,6 +34,34 @@ export const BUSINESS_UNIT = [
         link: "https://www.expkreativ.id",
         desc: "Buy & Sell Cars", 
     },
+    { 
+        id: 6,
+        name: "Sabika Mitra Kontruksi", 
+        image: "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        link: "https://www.expkreativ.id",
+        desc: "Contractor & General Suppliers", 
+    },
+    { 
+        id: 7,
+        name: "Sabika Pangan Nusantara", 
+        image: "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        link: "https://www.expkreativ.id",
+        desc: "Food & Beverages", 
+    },
+    { 
+        id: 8,
+        name: "Sabika Global Informatika", 
+        image: "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        link: "https://www.expkreativ.id",
+        desc: "IT Solutions", 
+    },
+    { 
+        id: 9,
+        name: "Baladhika Wirapati", 
+        image: "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        link: "https://www.expkreativ.id",
+        desc: "Outsorcing Services", 
+    },
 ];
 
 export const NETWORK_STORIES = [

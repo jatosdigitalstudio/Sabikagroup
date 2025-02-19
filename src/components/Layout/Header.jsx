@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -56,9 +56,6 @@ export default function Navbar() {
             </Button>
           </div>
 
-          {/* <MobileMenu /> */}
-
-          
           <button 
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -82,10 +79,6 @@ export default function Navbar() {
                 </Link>
               </div>
             ))}
-            {/* <a href="#about" className="block py-2">About</a>
-            <a href="#business" className="block py-2">Business Units</a>
-            <a href="#news" className="block py-2">News & Events</a>
-            <a href="#contact" className="block py-2">Contact</a> */}
           </div>
         )}
       </div>
