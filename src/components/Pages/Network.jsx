@@ -1,0 +1,41 @@
+"use client"
+import { motion } from "framer-motion";
+import { fadeUpVariant } from "@/utils/custom";
+import { NETWORK_STORIES } from "@/lib/data";
+import Link from "next/link";
+import Image from "next/image";
+
+export default function Network() {
+  return (
+    <section className="flex flex-col items-center justify-center px-6 py-12" id="stories">
+      <motion.div 
+        variants={fadeUpVariant}
+        initial="initial"
+        animate="animate"
+        className="relative text-center text-black max-w-4xl mb-8 px-6 md:px-24 lg:pt-24">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium mb-6">
+          Network <span className="text-[#345DA3]">Stories</span> 
+        </h1>
+        <p className="text-sm md:text-md lg:text-lg mb-12">
+          We bring innovation and integrity to every endeavor.
+          Explore how we’re shaping the future of industries
+        </p>
+      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:pb-28 place-items-center">
+        {
+          NETWORK_STORIES.map((item)  => (
+            <div className="flex flex-col relative w-[300px] px-4 ">
+              <div className="text-white rounded-md bg-black px-4 py-36 mb-6 justify-start">
+                
+              </div>
+              <div className="px-2">
+                <h2 className="text-xl font-bold mb-2 bottom-0">{item.name}</h2>
+                <p>"{item.text}"</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  );
+}

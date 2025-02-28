@@ -1,27 +1,11 @@
-// import React from 'react';
-
-// export default function Head({title, description}) {
-//     return (
-//       <>
-//         <title>{title}</title>
-//         <meta content="width=device-width, initial-scale=1" name="viewport" />
-//         <meta name="description" content={description} />
-//         <link rel="icon" href="/favicon.ico" />
-//       </>
-//     )
-//   }
-
-import Head from 'next/head';
-
-const SabikaGroupSEO = () => {
+export default function Head() {
   const pageTitle = "Sabika Group";
   const pageDescription = "A diversified holding company driving innovation, collaboration, and sustainable success across industries";
   const canonicalUrl = "https://www.sabikagroup.co.id";
   const keywords = "Sabika, Sabika Group, Businessess, Investment, Holding";
 
   return (
-    <Head>
-      {/* Primary Meta Tags */}
+    <>
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta name="keywords" content={keywords} />
@@ -49,19 +33,12 @@ const SabikaGroupSEO = () => {
 
       {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="manifest" href="/site.webmanifest" />
 
       {/* Viewport for Responsive Design */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {/* Additional Meta Tags (Optional) */}
       <meta name="theme-color" content="#ffffff" />
-    </Head>
-  );
-};
-
-export default SabikaGroupSEO;
-  
+    </>
+  )
+}

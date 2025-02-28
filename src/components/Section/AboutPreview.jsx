@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ButtonMinimal } from "../UI/ButtonMinimal";
 export default function AboutPreview() {
   return (
-    <section className="bg-[#345DA3] justify-center py-32" id="about">
+    <section className="bg-[#1C2677] justify-center py-32" id="about">
         <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 px-6">
                 <motion.div 

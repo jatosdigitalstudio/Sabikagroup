@@ -3,7 +3,7 @@ import { useEffect,useState } from 'react';
 import { usePathname } from "next/navigation";
 import { Inter, Arimo } from "next/font/google";
 import "@/styles/globals.css"
-import SabikaGroupSEO from './head';
+import Head from './head';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import ScrollToTopButton from '@/components/UI/ScrollToTopButton';
@@ -20,15 +20,9 @@ export default  function RootLayout({children}) {
   const [loading,setLoading] = useState(true)
   const path = usePathname();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
-  // }, []);
-
   return (
     <html lang="id">
-      <SabikaGroupSEO/>
+      <Head/>
       <body className={inter.className}>
           <>
             {/* <FlareCursor/> */}

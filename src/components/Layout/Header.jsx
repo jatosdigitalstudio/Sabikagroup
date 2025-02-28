@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl border-b border-gray-300' : 'bg-transparent '}`}>
+    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl border-b border-gray-300' : 'bg-white/55 backdrop-blur-xl border-b border-gray-300'}`}>
       <div className="lg:container mx-auto p-4 ">
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}
@@ -56,19 +56,36 @@ export default function Navbar() {
             </Button>
           </div>
 
-          <button 
+          {/* <button 
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
+          </button> */}
+
+          <button 
+            className="md:hidden p-2 flex flex-col justify-center items-center"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span 
+              className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm 
+                ${isMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5' }`} >
+            </span>
+            <span 
+              className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 
+                ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`} >
+            </span>
+            <span className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm 
+              ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`} >
+            </span>  
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4">
+          <div className="md:hidden mt-4 space-y-4 ">
             {navItems.map((item) => (
               <div key={item.path}>
                 <Link
