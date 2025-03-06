@@ -6,7 +6,7 @@ import { ButtonMinimal } from "../UI/ButtonMinimal";
 
 export default function AboutCompany() {
   return (
-    <section className="justify-center py-32 px-6 " id="about">
+    <section className="justify-center py-32 px-6" id="about">
         <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                 <motion.div 

@@ -7,10 +7,6 @@ export default function Card() {
       <div className="flex items-start justify-end gap-4 overflow-hidden p-6">
         {BUSINESS_UNIT.map((item) => (
           <Link key={item.id} href={item.link} target="blank" className="group relative w-full overflow-hidden shadow-md rounded-lg transition-all hover:shadow-xl">
-            {/* <div className={`w-[500px] py-36 px-12 bg-[#345DA3] rounded-lg text-2xl text-white`}>
-              <h2>{item.name}</h2>
-              <p className="text-sm">{item.desc}</p>
-            </div> */}
             <div className={`flex flex-col w-[450px] h-[400px] py-10 px-6 bg-black  text-2xl text-white`}>
               <Image
                 src={item.image}

@@ -2,18 +2,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Card from "@/components/UI/Card"
 import { useRef } from "react";
-import useWindowSize from "@/utils/windowSize";
-import Link from "next/link";
 
-export default function BusinessUnit() {
+export default function BusinessUnitMobile() {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
     });
-    const size = useWindowSize()
-    const w = size.width > 768
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
-    // const xm = useTransform(scrollYProgress, [0, 1], ["45%", "-50%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["45%", "-44%"]);
        
     return (
         <section ref={targetRef} className="relative h-[300vh] max-w-[1920px] mx-auto bg-white" id="business">

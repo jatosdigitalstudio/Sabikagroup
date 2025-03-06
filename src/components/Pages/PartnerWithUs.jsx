@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 import { fadeUpVariant,fadeUpVariant2 } from "@/utils/custom"
 export default function PartnerWithUs() {
     return (
-        <section className="relative h-screen flex items-center justify-center">
-            <div className="px-12 container mx-auto">
-                <div className="grid grid-cols-2 place-items-center">
+        <section className="flex items-center justify-center justify-center py-32">
+            <div className=" px-6 md:px-12 container mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                     <motion.div 
                         variants={fadeUpVariant}
                         initial="initial"
@@ -22,7 +22,7 @@ export default function PartnerWithUs() {
                         variants={fadeUpVariant2}
                         initial="initial"
                         animate="animate"
-                        className="bg-[#EFF1F7] w-[450px] h-[500px]">
+                        className="bg-[#EFF1F7] w-[400px] h-[500px]">
                        
                     </motion.div>
                 </div>
