@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeUpVariant } from "@/utils/custom";
 import Link from "next/link";
-import { ButtonMinimal } from "../UI/ButtonMinimal";
+// import { ButtonMinimal } from "../UI/ButtonMinimal";
 export default function AboutPreview() {
   return (
     <section className="bg-[#1C2677] justify-center py-32" id="about">
@@ -51,11 +51,9 @@ export default function AboutPreview() {
 
                         <div className="justify-center items-center">
                             <Link href="/about">
-                                <ButtonMinimal>
-                                    <span className="text-white">
-                                        Learn more about our Journey
-                                    </span>
-                                </ButtonMinimal>
+                                <span className="text-white">
+                                    Learn more about our Journey
+                                </span>
                             </Link>
                         </div>
                 </motion.div>

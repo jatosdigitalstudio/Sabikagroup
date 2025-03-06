@@ -24,7 +24,7 @@ export default function Network() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:pb-28 place-items-center">
         {
           NETWORK_STORIES.map((item)  => (
-            <div className="flex flex-col relative w-[300px] px-4 ">
+            <div className="flex flex-col relative w-[300px] px-4" key={item.id}>
               <div className="text-white rounded-md bg-black px-4 py-36 mb-6 justify-start">
                 
               </div>
