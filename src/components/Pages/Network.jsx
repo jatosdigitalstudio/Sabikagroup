@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
-import { fadeUpVariant } from "@/utils/custom";
+import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom";
 import { NETWORK_STORIES } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,7 +21,11 @@ export default function Network() {
           Explore how we’re shaping the future of industries
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:pb-28 place-items-center">
+      <motion.div 
+        variants={fadeUpVariant3}
+        initial="initial"
+        animate="animate"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:pb-28 place-items-center">
         {
           NETWORK_STORIES.map((item)  => (
             <div className="flex flex-col relative w-[300px] px-4" key={item.id}>
@@ -35,7 +39,7 @@ export default function Network() {
             </div>
           ))
         }
-      </div>
+      </motion.div>
     </section>
   );
 }

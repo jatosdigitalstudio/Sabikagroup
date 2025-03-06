@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { fadeUpVariant } from "@/utils/custom"
+import { fadeUpVariant,fadeUpVariant2 } from "@/utils/custom"
 export default function PartnerWithUs() {
     return (
         <section className="relative h-screen flex items-center justify-center">
@@ -19,7 +19,7 @@ export default function PartnerWithUs() {
                                 growth, let’s build something remarkable together.</p>
                     </motion.div>
                     <motion.div 
-                        variants={fadeUpVariant}
+                        variants={fadeUpVariant2}
                         initial="initial"
                         animate="animate"
                         className="bg-[#EFF1F7] w-[450px] h-[500px]">

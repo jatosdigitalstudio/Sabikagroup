@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { fadeUpVariant } from "@/utils/custom"
+import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom"
 export default function NewsEvents() {
     return (
         <section className="relative h-screen flex items-center justify-center">
@@ -16,7 +16,7 @@ export default function NewsEvents() {
                             </h1>
                     </motion.div>
                     <motion.div 
-                        variants={fadeUpVariant}
+                        variants={fadeUpVariant3}
                         initial="initial"
                         animate="animate"
                         className="grid grid-cols-2 gap-8 px-24">
