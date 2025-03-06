@@ -4,7 +4,7 @@ import { RiInstagramFill,RiFacebookCircleFill, RiLinkedinBoxFill  } from "react-
 
 export default function Footer() {
     return (
-      <footer className="bg-[#345DA3] text-white py-12 px-8 m-6 md:m-12 rounded-xl">
+      <footer className="bg-[#245CA1] text-white py-12 px-8 m-6 md:m-12 rounded-xl">
         <div className="container mx-auto px-2 md:px-4">
           <div className="grid md:grid-cols-2 gap-8 mb-32">
             <div className="mb-2 max-w-md">
@@ -19,9 +19,8 @@ export default function Footer() {
                 <h3 className="font-bold text-xl mb-4">Company</h3>
                   <ul className="space-y-2 text-md md:text-xl">
                       <li><Link href="/about" className="text-gray-200 hover:text-white">About Us</Link></li>
-                      <li><Link href="/" className="text-gray-200 hover:text-white">Vision & Mission</Link></li>
-                      <li><Link href="/" className="text-gray-200 hover:text-white">Network Stories</Link></li>
-                      <li><Link href="/" className="text-gray-200 hover:text-white">News & Events</Link></li>
+                      <li><Link href="/network-stories" className="text-gray-200 hover:text-white">Network Stories</Link></li>
+                      <li><Link href="/news-events" className="text-gray-200 hover:text-white">News & Events</Link></li>
                   </ul>
                 </div>
 
