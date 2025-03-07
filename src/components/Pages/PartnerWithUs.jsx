@@ -1,7 +1,18 @@
 "use client"
+import { useState, useEffect } from "react";
+import Loading from "@/app/loading";
 import { motion } from "framer-motion"
 import { fadeUpVariant,fadeUpVariant2 } from "@/utils/custom"
+
 export default function PartnerWithUs() {
+    const [loading,setLoading] = useState(true)
+        useEffect(() => {
+            setTimeout(() => {
+            setLoading(false);
+            }, 1500);
+        }, []);
+        
+    if (loading) return <Loading />
     return (
         <section className="flex items-center justify-center justify-center py-32">
             <div className=" px-6 md:px-12 container mx-auto">

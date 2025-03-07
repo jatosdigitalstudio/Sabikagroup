@@ -1,7 +1,18 @@
 "use client"
+import { useState, useEffect } from "react";
+import Loading from "@/app/loading";
 import { motion } from "framer-motion"
 import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom"
+
 export default function NewsEvents() {
+    const [loading,setLoading] = useState(true)
+        useEffect(() => {
+            setTimeout(() => {
+            setLoading(false);
+            }, 1500);
+        }, []);
+        
+    if (loading) return <Loading />
     return (
         <section className="relative h-screen flex flex-col items-center justify-center">
             <div className="container mx-auto">

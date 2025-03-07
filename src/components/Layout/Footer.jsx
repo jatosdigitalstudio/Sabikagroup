@@ -27,19 +27,19 @@ export default function Footer() {
                 <div>
                 <h3 className="font-bold text-xl mb-4">Businesses</h3>
                 <ul className="space-y-2 text-md md:text-xl">
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Worker</Link></li>
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Real Estate</Link></li>
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Technology</Link></li>
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Otomotif</Link></li>
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Food & Beverages</Link></li>
+                    <li><Link href="/businesses" className="text-gray-200 hover:text-white">Worker</Link></li>
+                    <li><Link href="/businesses" className="text-gray-200 hover:text-white">Real Estate</Link></li>
+                    <li><Link href="/businesses" className="text-gray-200 hover:text-white">Technology</Link></li>
+                    <li><Link href="/businesses" className="text-gray-200 hover:text-white">Otomotif</Link></li>
+                    <li><Link href="/businesses" className="text-gray-200 hover:text-white">Food & Beverages</Link></li>
                 </ul>
                 </div>
 
                 <div>
                 <h3 className="font-bold text-xl mb-4">Partner With Us</h3>
                 <ul className="space-y-2 text-md md:text-xl">
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Investment</Link></li>
-                    <li><Link href="/" className="text-gray-200 hover:text-white">Collaboration</Link></li>
+                    <li><Link href="/partner" className="text-gray-200 hover:text-white">Investment</Link></li>
+                    <li><Link href="/partner" className="text-gray-200 hover:text-white">Collaboration</Link></li>
                 </ul>
                 </div>
             </div>

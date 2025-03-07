@@ -10,7 +10,7 @@ export default function Navbar() {
   const navItems = [
     { name: 'About Company', path: '/about' },
     { name: 'Network Stories', path: '/network-stories' },
-    { name: 'Businesses', path: '/businesses' },
+    { name: 'Our Businesses', path: '/businesses' },
     { name: 'News & Events', path: '/news-events' },
     { name: 'Partner with Us', path: '/partner' },
   ];

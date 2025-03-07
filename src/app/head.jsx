@@ -1,5 +1,5 @@
 export default function Head() {
-  const pageTitle = "Sabika Group";
+  const pageTitle = "Sabika Group - A Holding Company";
   const pageDescription = "A diversified holding company driving innovation, collaboration, and sustainable success across industries";
   const canonicalUrl = "https://www.sabikagroup.co.id";
   const keywords = "Sabika, Sabika Group, Businessess, Investment, Holding";

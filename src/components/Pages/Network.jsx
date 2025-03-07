@@ -1,11 +1,19 @@
 "use client"
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom";
 import { NETWORK_STORIES } from "@/lib/data";
-import Link from "next/link";
-import Image from "next/image";
+import Loading from "@/app/loading";
 
 export default function Network() {
+  const [loading,setLoading] = useState(true)
+    useEffect(() => {
+      setTimeout(() => {
+      setLoading(false);
+      }, 1500);
+  }, []);
+  
+  if (loading) return <Loading />
   return (
     <section className="relative flex flex-col items-center justify-center" id="stories">
       <div className="px-6 my-36 container mx-auto place-items-center">

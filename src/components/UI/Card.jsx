@@ -7,7 +7,7 @@ export default function Card() {
       <div className="flex items-start justify-end gap-4 overflow-hidden p-6">
         {BUSINESS_UNIT.map((item) => (
           <Link key={item.id} href={item.link} target="blank" className="group relative w-full overflow-hidden shadow-md rounded-lg transition-all hover:shadow-xl">
-            <div className={`flex flex-col w-[450px] h-[400px] py-10 px-6 bg-black  text-2xl text-white`}>
+            <div className={`flex flex-col w-[280px] h-[350px] md:w-[450px] md:h-[400px] py-10 px-6 bg-black text-2xl text-white`}>
               <Image
                 src={item.image}
                 alt={item.name}
@@ -17,7 +17,7 @@ export default function Card() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/30" />
 
-              <div className="relative flex h-full flex-col items-start justify-end p-4 text-left text-white">
+              <div className="relative flex h-full flex-col items-start justify-end p-2 md:p-4 text-left text-white">
                 <h2 className="text-xl mb-2">{item.name}</h2>
                 <p className="text-sm">{item.desc}</p>
               </div>
