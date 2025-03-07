@@ -6,6 +6,7 @@ import "@/styles/globals.css"
 import Loading from "./loading";
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+import Head from './head';
 
 const inter = Arimo({ 
   weight: ['400','500','600', '700'],
@@ -25,6 +26,7 @@ export default  function RootLayout({children}) {
 
   return (
     <html lang="id">
+      <Head/>
       <body className={inter.className}>
          {loading ? <Loading/> : (
           <>
