@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '../UI/Button';
@@ -6,6 +7,7 @@ import { Button } from '../UI/Button';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const navItems = [
     { name: 'About Company', path: '/about' },
@@ -23,8 +25,12 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [router]);
+
   return (
-    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/55 backdrop-blur-xl border-b border-gray-300' : 'bg-white/55 backdrop-blur-xl border-b border-gray-300'}`}>
+    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/75 backdrop-blur-xl border-b border-gray-300' : 'bg-white/55 backdrop-blur-xl border-b border-gray-300'}`}>
       <div className="lg:container mx-auto p-4 ">
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}
@@ -56,15 +62,6 @@ export default function Navbar() {
             </Button>
           </div>
 
-          {/* <button 
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button> */}
-
           <button 
             className="md:hidden p-2 flex flex-col justify-center items-center"
             aria-label='hamburger'
@@ -86,11 +83,12 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4 ">
+          <div className="md:hidden mt-4 space-y-4 transition-all duration-500 ease-out">
             {navItems.map((item) => (
               <div key={item.path}>
                 <Link
                   href={item.path}
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
                   className={`${isScrolled ? 'text-black' : 'text-black'} font-medium transition-colors hover-underline-animation`}
                 >
                   {item.name}

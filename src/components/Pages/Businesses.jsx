@@ -36,20 +36,11 @@ export default function Businesses() {
                     variants={fadeUpVariant2}
                     initial="initial"
                     animate="animate"
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                     {
                         BUSINESS_UNIT.map((item) => (
-                            <Link href={item.link} key={item.id} className="group relative w-full overflow-hidden shadow-md rounded-lg transition-all hover:shadow-xl">
-                                {/* <motion.div 
-                                    variants={fadeUpVariant3}
-                                    initial="initial"
-                                    animate="animate"
-                                    className="flex flex-col justify-center items-center bg-[#345DA3] text-white rounded-md w-[300px] h-[200px]"
-                                >
-                                    <h3 className="font-bold text-lg">{item.name}</h3>
-                                    <p className="text-gray-200 text-sm">{item.desc}</p>
-                                </motion.div> */}
-                                <div className={`flex flex-col w-[200px] h-[300px] md:w-[400px] md:h-[350px] py-8 px-6 bg-black text-2xl text-white`}>
+                            <Link href={item.link} key={item.id} target="_blank" className="group relative w-full overflow-hidden shadow-md rounded-lg transition-all hover:shadow-xl">
+                                <div className={`flex flex-col w-[400px] h-[350px] py-8 px-6 bg-black text-2xl text-white`}>
                                     <Image
                                     src={item.image}
                                     alt={item.name}

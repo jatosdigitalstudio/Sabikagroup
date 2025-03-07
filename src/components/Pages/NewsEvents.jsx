@@ -30,7 +30,7 @@ export default function NewsEvents() {
                         variants={fadeUpVariant3}
                         initial="initial"
                         animate="animate"
-                        className="grid grid-cols-2 gap-8 md:px-24">
+                        className="grid grid-cols-2 gap-4 md:gap-8 md:px-24">
                         <div className="bg-[#1C2677] text-center text-white py-24 px-6 rounded-md">
                             Events
                         </div>
