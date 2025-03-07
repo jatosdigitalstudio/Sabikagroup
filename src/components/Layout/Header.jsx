@@ -67,6 +67,7 @@ export default function Navbar() {
 
           <button 
             className="md:hidden p-2 flex flex-col justify-center items-center"
+            aria-label='hamburger'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span 

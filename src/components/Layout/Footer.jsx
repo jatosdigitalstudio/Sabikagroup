@@ -46,13 +46,13 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-row mb-6 gap-2">
-            <Link href="www.facebook.com">
+            <Link aria-label="facebook" href="www.facebook.com">
               <RiFacebookCircleFill size={40} className="hover:text-white text-gray-200" />
             </Link>
-            <Link href="https://www.instagram.com/sabika.propertindo/?hl=en">
+            <Link aria-label="instagram" href="https://www.instagram.com/sabika.propertindo/?hl=en">
               <RiInstagramFill size={40} className="hover:text-white text-gray-200" />
             </Link>
-            <Link href="https://www.linkedin.com/company/sabika-garuda-kapital/?originalSubdomain=id">
+            <Link aria-label="linkedin" href="https://www.linkedin.com/company/sabika-garuda-kapital/?originalSubdomain=id">
               <RiLinkedinBoxFill size={40} className="hover:text-white text-gray-200" />
             </Link>
           </div>

@@ -12,7 +12,7 @@ import useWindowSize from "@/utils/windowSize";
 
 export default function Homepage() {
     const size = useWindowSize()
-    const w = size.width > 768
+    const w = size.width < 768
     const [loading,setLoading] = useState(true)
     useEffect(() => {
         setTimeout(() => {
