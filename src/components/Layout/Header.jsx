@@ -83,17 +83,16 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4 transition-all duration-500 ease-out">
+          <div className="flex flex-col px-4 md:hidden my-4 space-y-4 transition-all duration-500 ease-out">
             {navItems.map((item) => (
-              <div key={item.path}>
-                <Link
-                  href={item.path}
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className={`${isScrolled ? 'text-black' : 'text-black'} font-medium transition-colors hover-underline-animation`}
-                >
-                  {item.name}
-                </Link>
-              </div>
+              <Link
+                href={item.path}
+                key={item.path}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className={`${isScrolled ? 'text-black' : 'text-black'} font-medium transition-colors hover-underline-animation`}
+              >
+                {item.name}
+              </Link>
             ))}
           </div>
         )}
