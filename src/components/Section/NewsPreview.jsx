@@ -1,8 +1,8 @@
 "use client"
-// import { motion, useScroll, useTransform } from "framer-motion";
 import Card from "@/components/UI/Card"
 import Link from "next/link";
 import { NEWS_EVENT } from "@/lib/news";
+
 export default function NewsPreview() {
     return (
         <section className="my-24 py-12 px-6 md:px-24 bg-white">

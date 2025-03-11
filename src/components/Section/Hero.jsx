@@ -31,11 +31,9 @@ export default function Hero() {
           animate="animate"
           className="flex flex-col md:flex-row mx-auto justify-center gap-2 md:gap-4">
             <Link href="/#about" scroll>
-                <Button 
-                className="bg-[#283782] text-white px-8 py-3 rounded-md text-lg font-semibold"
-                >
+              <Button className="bg-[#283782] text-white px-8 py-3 rounded-md text-lg font-semibold">
                 Founder&apos;s Vision
-                </Button>
+              </Button>
             </Link>
             <Link href="/#business" scroll className="flex p-4 justify-center">
               Explore Our Business

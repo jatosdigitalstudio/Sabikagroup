@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom";
 import { NETWORK_STORIES } from "@/lib/data";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function NetworkStories() {
   return (

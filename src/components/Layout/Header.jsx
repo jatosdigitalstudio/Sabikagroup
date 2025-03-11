@@ -54,14 +54,12 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex">
-            {/* <div className="bg-[#345DA3] text-white px-6 py-4 rounded-md">
-                Contact Us
-            </div> */}
-            <Button>
-              <Link href="/#contact">
-                Contact Us
-              </Link>
-            </Button>
+            <Link href="/#contact">
+              <Button>
+                  Contact Us
+              </Button>
+            </Link>
+
           </div>
 
           <button 

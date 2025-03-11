@@ -40,8 +40,8 @@ export default function AboutCompany() {
                             initial="initial"
                             animate="animate"
                             className="bg-[#1C2677] text-white px-6 md:px-12 py-8 rounded-md">
-                            <h4 className="text-4xl font-bold mb-4">Mision</h4>
-                            <p>
+                            <h4 className="text-2xl md:text-4xl font-bold mb-4">Mision</h4>
+                            <p className="">
                                 Become a company that is in accordance with the values desired by the Assignor, 
                                 and is able to provide satisfaction and compete among other companies in Indonesia.
                             </p>
@@ -51,8 +51,8 @@ export default function AboutCompany() {
                             initial="initial"
                             animate="animate"
                             className="bg-[#2F6FB2] text-white px-6 md:px-12 py-8 rounded-md">
-                            <h4 className="text-4xl font-bold mb-4">Vision</h4>
-                            <p>
+                            <h4 className="text-2xl md:text-4xl font-bold mb-4">Vision</h4>
+                            <p className="">
                                 Providing professional expertise services in various fields, such as detailed planning, 
                                 study, analysis, concept, supervision to engineering, and management to government and 
                                 private agencies by prioritizing ethics, honesty and responsibility based on professional 

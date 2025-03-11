@@ -5,10 +5,7 @@ export const Button = ({ children }) => {
           <p className="text-white group-hover:translate-y-[-20px] duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
             {children}
           </p>
-          <p
-            aria-hidden
-            className="absolute left-0 top-5 text-white group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]"
-          >
+          <p className="absolute left-0 top-5 text-white group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
             {children}
           </p>
         </div>

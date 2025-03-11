@@ -11,13 +11,7 @@ export default function CTA() {
       target: container,
       offset: ['start start', 'end start']
     })
-    const { scrollXProgress } = useScroll({
-        target: container,
-        offset: ['start center', 'end center']
-      })
-  
     const y = useTransform(scrollYProgress, [0, 1], ["-100vh", "50vh"])
-    const x = useTransform(scrollXProgress, [0, 2], ["100vh", "-150vh"])
   
     return (
       <div className='h-screen overflow-hidden '>
