@@ -14,7 +14,7 @@ export default function NewsEvents() {
         
     if (loading) return <Loading />
     return (
-        <section className="relative h-screen flex flex-col items-center justify-center">
+        <section className="justify-center py-36 px-6">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 px-6">
                     <motion.div 

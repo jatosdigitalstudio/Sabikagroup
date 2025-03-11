@@ -6,15 +6,14 @@ import { fadeUpVariant } from "@/utils/custom"
 import FormInvestment from "../UI/FormInvestment";
 
 export default function PartnerWithUs() {
-    const [loading,setLoading] = useState(false)
-   
-    useEffect(() => {
-        setTimeout(() => {
-        setLoading(false);
-        }, 1500);
-    }, []);
-    
-    if (loading) return <Loading />
+    const [loading,setLoading] = useState(true)
+           useEffect(() => {
+               setTimeout(() => {
+               setLoading(false);
+               }, 1500);
+           }, []);
+           
+       if (loading) return <Loading />
     return (
         <section className="relative flex items-center justify-center">
             <div className="px-6 md:px-20 my-36 container mx-auto place-items-center">

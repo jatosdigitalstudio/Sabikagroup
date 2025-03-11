@@ -1,29 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
-import { RiInstagramFill,RiFacebookCircleFill, RiLinkedinBoxFill, RiPhoneFill, RiMapFill } from "react-icons/ri";
+import { RiInstagramFill,RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { HiPhone, HiOfficeBuilding} from "react-icons/hi";
 
 export default function Footer() {
     return (
-      <footer className="bg-[#245CA1] text-white py-8 px-6 md:py-12 md:px-8 m-6 md:m-12 rounded-xl">
+      <footer className="bg-[#245CA1] text-white py-8 px-6 md:py-12 md:px-8 m-6 md:m-12 rounded-xl" id="contact">
         <div className="container mx-auto px-2 md:px-4">
-          <div className="grid md:grid-cols-2 gap-8 mb-20">
-            <div className="mb-2 max-w-md">
-              <Image src="/logo-white.png" width={300} height={100} alt="Sabika Group" className="ml-[-15px]" />
-              <p className="text-md text-gray-200">
-                A diversified holding company driving innovation, collaboration, and sustainable success across industries
-              </p>
-              {/* <div className="flex justify-start items-start gap-4 my-4">
-                <RiPhoneFill size={40} className="hover:text-white text-gray-200"/>
+          <div className="grid md:grid-cols-2 gap-8 mb-24">
+            <div className="mb-2 max-w-md space-y-4">
+              <div className="">
+                <Image src="/logo-white.png" width={300} height={100} alt="Sabika Group" className="ml-[-15px]" />
+                <p className="text-md text-gray-200">
+                  A diversified holding company driving innovation, collaboration, and sustainable success across industries
+                </p>
+              </div>
+              <Link href="/" className="flex flex-row items-center gap-3">
+                <HiPhone size={35} className="bg-white rounded-full text-[#245CA1] p-2 hover:text-white text-gray-200"/>
                 <p className="text-md text-gray-200">
                   (021) 8299273
                 </p>
-              </div>
-              <div className="flex justify-start items-start gap-4 my-4">
-                <RiMapFill size={40} className="hover:text-white text-gray-200"/>
-                <p className="text-md text-gray-200">
-                  Jl. Asem Baris Raya No.3, RT.4/RW.12, Kb. Baru, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12830
+              </Link>
+              <Link href="https://g.co/kgs/MiKYfvZ" className="flex items-start justify-center gap-3" target="_blank">
+                <HiOfficeBuilding fontSize={35} className="bg-white rounded-full text-[#245CA1] p-2"/>
+                <p className="-mt-0.5 flex-1 not-italic text-gray-100">
+                  Jl. Asem Baris Raya No.3, RT.4/RW.12, Kb. Baru, Kec. Tebet, Kota Jakarta Selatan, DKI Jakarta 12830
                 </p>
-              </div> */}
+              </Link>
+            
             </div>
             
             <div className="grid grid-rows md:grid-cols-3 gap-8">

@@ -58,7 +58,9 @@ export default function Navbar() {
                 Contact Us
             </div> */}
             <Button>
-              Contact Us
+              <Link href="/#contact">
+                Contact Us
+              </Link>
             </Button>
           </div>
 
