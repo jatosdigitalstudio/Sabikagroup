@@ -16,7 +16,7 @@ export default function Footer() {
                 </p>
               </div>
               <Link href="/" className="flex flex-row items-center gap-3">
-                <HiPhone size={35} className="bg-white rounded-full text-[#245CA1] p-2 hover:text-white text-gray-200"/>
+                <HiPhone size={35} className="bg-white rounded-full text-[#245CA1] p-2"/>
                 <p className="text-md text-gray-200">
                   (021) 8299273
                 </p>
