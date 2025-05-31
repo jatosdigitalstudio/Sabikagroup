@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom";
 import { NETWORK_STORIES } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NetworkStories() {
   return (
@@ -28,8 +29,13 @@ export default function NetworkStories() {
         {
           NETWORK_STORIES.map((item) => (
             <div className="flex flex-col relative w-[300px] px-4" key={item.id}>
-              <div className="text-white rounded-md bg-black px-4 py-36 mb-6 justify-start">
-                
+              <div className="text-white rounded-md overflow-hidden mb-6">
+                <Image 
+                  src={item.image}
+                  width={500}
+                  height={500}
+                  alt={item.name}
+                />
               </div>
               <div className="px-2">
                 <h2 className="text-xl font-bold mb-2 bottom-0">{item.name}</h2>
@@ -38,11 +44,11 @@ export default function NetworkStories() {
             </div>
           ))
         }
-        <div className="justify-center">
+        {/* <div className="justify-center">
             <Link href="/network-stories" className="underline">
               Read More Stories
             </Link>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

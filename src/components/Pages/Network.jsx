@@ -34,12 +34,17 @@ export default function Network() {
           variants={fadeUpVariant3}
           initial="initial"
           animate="animate"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:pb-28 place-items-center">
+          className="grid grid-cols-1 md:grid-cols-3  gap-12 lg:pb-28 place-items-center">
           {
             NETWORK_STORIES.map((item)  => (
               <div className="flex flex-col relative w-[300px] " key={item.id}>
-                <div className="text-white rounded-md bg-black px-4 py-36 mb-6 justify-start">
-                  
+                <div className="text-white rounded-md overflow-hidden mb-6">
+                  <Image 
+                    src={item.image}
+                    width={500}
+                    height={500}
+                    alt={item.name}
+                  />
                 </div>
                 <div className="px-2">
                   <h2 className="text-xl font-bold mb-2 bottom-0">{item.name}</h2>
