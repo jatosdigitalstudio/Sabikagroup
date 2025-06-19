@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: 'About Company', path: '/about' },
     { name: 'Network Stories', path: '/network-stories' },
     { name: 'Our Businesses', path: '/businesses' },
-    { name: 'News & Events', path: '/news-events' },
+    // { name: 'News & Events', path: '/news-events' },
     { name: 'Partner with Us', path: '/partner' },
   ];
 
@@ -30,7 +30,7 @@ export default function Navbar() {
   }, [router]);
 
   return (
-    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/75 backdrop-blur-xl border-b border-gray-300' : 'bg-white/55 backdrop-blur-xl border-b border-gray-300'}`}>
+    <nav className={`fixed border-b border-gray-300 w-full z-50 transition-all md:px-12 duration-300 ${isScrolled ? 'bg-white/75 backdrop-blur-xl border-b border-gray-300' : 'bg-transparent'}`}>
       <div className="lg:container mx-auto p-4 ">
         <div className="flex justify-between items-center">
           {/* <div className="text-2xl font-bold text-blue-900">Sabika Group</div> */}

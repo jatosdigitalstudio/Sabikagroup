@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeUpVariant, fadeUpVariant3 } from "@/utils/custom";
 import { NETWORK_STORIES } from "@/lib/data";
 import Loading from "@/app/loading";
+import Image from "next/image";
 
 export default function Network() {
   const [loading,setLoading] = useState(true)
@@ -34,7 +35,7 @@ export default function Network() {
           variants={fadeUpVariant3}
           initial="initial"
           animate="animate"
-          className="grid grid-cols-1 md:grid-cols-3  gap-12 lg:pb-28 place-items-center">
+          className="grid grid-cols-1 md:grid-cols-3  gap-12 lg:pb-28">
           {
             NETWORK_STORIES.map((item)  => (
               <div className="flex flex-col relative w-[300px] " key={item.id}>

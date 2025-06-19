@@ -15,10 +15,11 @@ export default function Card() {
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/40" />
 
-              <div className="relative flex h-full flex-col items-start justify-end p-2 md:p-4 text-left text-white">
-                <h2 className="text-xl mb-2">{item.name}</h2>
+              <div className="relative flex h-full flex-col items-center justify-center p-2 text-left text-white">
+                <Image src={item.logo} width={200} height={200} alt={item.name} className="mb-4 rounded-md"/>
+                <h2 className="text-xl font-bold mb-2">{item.name}</h2>
                 <p className="text-sm">{item.desc}</p>
               </div>
             </div>

@@ -36,7 +36,7 @@ export default function Footer() {
                   <ul className="space-y-2 text-md md:text-xl">
                       <li><Link href="/about" className="text-gray-200 hover:text-white">About Us</Link></li>
                       <li><Link href="/network-stories" className="text-gray-200 hover:text-white">Network Stories</Link></li>
-                      <li><Link href="/news-events" className="text-gray-200 hover:text-white">News & Events</Link></li>
+                      {/* <li><Link href="/news-events" className="text-gray-200 hover:text-white">News & Events</Link></li> */}
                   </ul>
                 </div>
 
