@@ -1,6 +1,5 @@
 "use client"
-import Image from "next/image";
-import { fadeUpVariant } from "@/utils/custom";
+
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 
@@ -11,8 +10,8 @@ export default function Founder() {
     offset: ["start end", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["-500%", "0%"]);
-  const springX = useSpring(x, { stiffness: 100, damping: 30 });
+  const x = useTransform(scrollYProgress, [0, 1], ["-800%", "0%"]);
+  const springX = useSpring(x, { stiffness: 20, damping: 10 });
 
   return (
     <motion.div
