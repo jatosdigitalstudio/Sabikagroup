@@ -21,7 +21,7 @@ export default function NewAbout() {
                 >
                 {BUSINESS_UNIT.map((data, i) => (
                     <div key={i} className="flex-shrink-0">
-                    <img src={data.logo} alt={data.name} className="h-24 w-auto rounded-md" />
+                    <img src={data.logo} alt={data.name} className="h-16 md:h-24 w-auto rounded-md" />
                     </div>
                 ))}
                 </motion.div>
@@ -29,10 +29,10 @@ export default function NewAbout() {
 
             {/* About Section */}
             <div className="bg-white py-20">
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12">
+                <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-12">
                    <Slide direction="left" cascade damping={0.2}>
                         <div className="text-black max-w-4xl mb-8 md:px-24">
-                            <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium mb-6">
+                            <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium md:mb-6">
                                 About <br /> Sabika Group
                             </h1>
                         </div>

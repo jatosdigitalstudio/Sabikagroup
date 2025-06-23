@@ -5,6 +5,7 @@ import Hero from "@/components/Section/Hero";
 import NewAbout from "@/components/Section/NewAbout";
 import AboutPreview from "@/components/Section/AboutPreview";
 import Founder from "@/components/Section/Founder";
+import FounderMobile from "@/components/Section/FounderMobile";
 import NetworkStories from "@/components/Section/NetworkStories";
 import BusinessUnit from "@/components/Section/BusinessUnit";
 import BusinessUnitMobile from "@/components/Section/BusinessUnitMobile";
@@ -14,7 +15,7 @@ import useWindowSize from "@/utils/windowSize";
 
 export default function Homepage() {
     const size = useWindowSize()
-    const w = size.width < 768
+    const mobile = size.width < 768
     const [loading,setLoading] = useState(true)
     useEffect(() => {
         setTimeout(() => {
@@ -28,9 +29,9 @@ export default function Homepage() {
         <Hero/>
         {/* <AboutPreview/> */}
         <NewAbout/>
-        <Founder/>
+        { mobile ? <FounderMobile/> : <Founder/> }
         <NetworkStories/>
-        { w ? <BusinessUnitMobile/> : <BusinessUnit/> }
+        { mobile ? <BusinessUnitMobile/> : <BusinessUnit/> }
         <CTA/>
         {/* <NewsPreview/> */}
         </>

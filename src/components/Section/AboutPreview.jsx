@@ -14,7 +14,7 @@ export default function AboutPreview() {
                     initial="initial"
                     animate="animate"
                     className="text-white max-w-4xl mb-8 md:px-24">
-                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium mb-6">
+                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium md:mb-6">
                         About <br /> Sabika Group
                     </h1>
                     <p className="text-gray-200 mb-6">

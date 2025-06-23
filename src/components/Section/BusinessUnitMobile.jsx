@@ -8,7 +8,7 @@ export default function BusinessUnitMobile() {
     const { scrollYProgress } = useScroll({
         target: targetRef,
     });
-    const x = useTransform(scrollYProgress, [0, 1], ["42%", "-44%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["43%", "-44%"]);
        
     return (
         <section ref={targetRef} className="relative h-[300vh] max-w-[1920px] mx-auto bg-white" id="business">

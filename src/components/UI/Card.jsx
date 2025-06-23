@@ -19,8 +19,8 @@ export default function Card() {
 
               <div className="relative flex h-full flex-col items-center justify-center p-2 text-left text-white">
                 <Image src={item.logo} width={200} height={200} alt={item.name} className="mb-4 rounded-md"/>
-                <h2 className="text-xl font-bold mb-2">{item.name}</h2>
-                <p className="text-sm">{item.desc}</p>
+                <h2 className="text-[16px] md:text-xl md:font-bold mb-2">{item.name}</h2>
+                <p className="text-xs md:text-sm">{item.desc}</p>
               </div>
             </div>
           </Link>

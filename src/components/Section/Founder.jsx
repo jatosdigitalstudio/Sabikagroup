@@ -2,8 +2,11 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
+import useWindowSize from "@/utils/windowSize";
 
 export default function Founder() {
+  const size = useWindowSize()
+  const mobile = size.width < 768
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
