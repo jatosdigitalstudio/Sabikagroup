@@ -82,7 +82,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="px-4 md:hidden my-4 space-y-4 transition-all duration-500 ease-out">
+          <div className="px-4 flex flex-col md:hidden my-4 space-y-4 transition-all duration-500 ease-out">
             {navItems.map((item) => (
               <Link
                 href={item.path}

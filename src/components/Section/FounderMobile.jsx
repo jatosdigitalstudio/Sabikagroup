@@ -31,7 +31,7 @@ export default function FounderMobile() {
                     />
                     <div className="absolute bottom-8 left-8 bg-black/30 backdrop-blur-sm text-white p-6 rounded-lg shadow-lg border border-white/40">
                         <h3 className="text-2xl font-semibold">Nofel Saleh Hilabi</h3>
-                        <p className="text-sm">CEO of Sabika Group</p>
+                        {/* <p className="text-sm">CEO of Sabika Group</p> */}
                     </div>
                 </div>
             </div>
